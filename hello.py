@@ -17,7 +17,7 @@ chart_data = pd.DataFrame(
 
 st.line_chart(chart_data)
 
-if st.checkbox('Show dataframe'):
+if st.checkbox('Show map'):
     map_data = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
     columns=['lat', 'lon'])
