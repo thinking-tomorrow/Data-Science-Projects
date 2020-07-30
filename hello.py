@@ -23,3 +23,10 @@ if st.checkbox('Show map'):
     columns=['lat', 'lon'])
 
     st.map(map_data)
+
+else:
+    option = st.selectbox(
+    'Which number do you like best?',
+     df['first column'])
+
+    'You selected: ', option
